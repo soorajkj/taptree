@@ -19,7 +19,7 @@ function AccordionItem({
     <AccordionPrimitive.Item
       data-slot="accordion-item"
       className={classNames(
-        "border-carbon-900 hover:bg-carbon-800/30 data-[state=open]:bg-carbon-800/30 border-b px-6 last:border-b-0",
+        "border-b border-neutral-900 px-6 last:border-b-0 hover:bg-neutral-800/30 data-[state=open]:bg-neutral-800/30",
         className
       )}
       {...props}

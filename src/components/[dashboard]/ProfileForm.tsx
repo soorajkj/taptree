@@ -50,7 +50,7 @@ export default function ProfileForm() {
               <Form.FormControl>
                 <input
                   placeholder="Sarah Green"
-                  className="placeholder:text-carbon-700 flex field-sizing-content resize-none items-center gap-1 text-2xl leading-none text-white outline-none"
+                  className="flex field-sizing-content resize-none items-center gap-1 text-2xl leading-none text-white outline-none placeholder:text-neutral-700"
                   {...field}
                 />
               </Form.FormControl>
@@ -65,7 +65,7 @@ export default function ProfileForm() {
               <Form.FormControl>
                 <input
                   placeholder="City (optional)"
-                  className="placeholder:text-carbon-700 field-sizing-content resize-none text-white outline-none"
+                  className="field-sizing-content resize-none text-white outline-none placeholder:text-neutral-700"
                   {...field}
                 />
               </Form.FormControl>
@@ -81,7 +81,7 @@ export default function ProfileForm() {
               <Form.FormControl>
                 <textarea
                   placeholder="Write a short story about yourself..."
-                  className="placeholder:text-carbon-700 field-sizing-content resize-none text-center outline-none"
+                  className="field-sizing-content resize-none text-center outline-none placeholder:text-neutral-700"
                   {...field}
                 />
               </Form.FormControl>
@@ -101,7 +101,7 @@ export default function ProfileForm() {
                 <Form.FormControl>
                   <input
                     placeholder="Email (optional)"
-                    className="placeholder:text-carbon-700 field-sizing-content resize-none text-white outline-none"
+                    className="field-sizing-content resize-none text-white outline-none placeholder:text-neutral-700"
                     {...field}
                   />
                 </Form.FormControl>
@@ -119,7 +119,7 @@ export default function ProfileForm() {
                 <Form.FormControl>
                   <input
                     placeholder="Phone (optional)"
-                    className="placeholder:text-carbon-700 field-sizing-content resize-none text-white outline-none"
+                    className="field-sizing-content resize-none text-white outline-none placeholder:text-neutral-700"
                     {...field}
                   />
                 </Form.FormControl>
@@ -137,7 +137,7 @@ export default function ProfileForm() {
                 <Form.FormControl>
                   <input
                     placeholder="Website (optional)"
-                    className="placeholder:text-carbon-700 field-sizing-content resize-none text-white outline-none"
+                    className="field-sizing-content resize-none text-white outline-none placeholder:text-neutral-700"
                     {...field}
                   />
                 </Form.FormControl>

@@ -18,6 +18,6 @@ export function Button({ children, className, ...props }: ButtonProps) {
 
 const buttonStyles = tv({
   base: [
-    "text-carbon-950 inline-flex cursor-pointer items-center justify-center gap-2 rounded-md border border-transparent bg-white px-4 py-2 disabled:cursor-default [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+    "inline-flex cursor-pointer items-center justify-center gap-2 rounded-md border border-transparent bg-white px-4 py-2 text-neutral-950 disabled:cursor-default [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   ],
 });

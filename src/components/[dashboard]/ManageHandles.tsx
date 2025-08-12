@@ -120,7 +120,7 @@ export default function ManageHandles() {
         }}
       >
         <Dialog.DialogTrigger asChild>
-          <button className="bg-carbon-800/30 flex min-h-16 shrink-0 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg px-4 py-2">
+          <button className="flex min-h-16 shrink-0 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-neutral-800/30 px-4 py-2">
             <span className="flex size-6 shrink-0 items-center justify-center rounded-sm text-white">
               <Icon icon="Plus" className="size-6 opacity-20" />
             </span>

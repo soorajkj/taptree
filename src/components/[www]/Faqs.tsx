@@ -48,10 +48,10 @@ const faqs = [
 ];
 export default function Faqs() {
   return (
-    <section className="border-carbon-900 relative overflow-hidden border-y">
+    <section className="relative overflow-hidden border-y border-neutral-900">
       <Container>
-        <div className="border-carbon-900 border-x">
-          <div className="divide-carbon-800 grid grid-cols-12 divide-x">
+        <div className="border-x border-neutral-900">
+          <div className="grid grid-cols-12 divide-x divide-neutral-800">
             <div className="col-span-4">
               <div className="p-8">
                 <h2 className="font-archivo text-2xl text-white">

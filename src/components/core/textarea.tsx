@@ -18,6 +18,6 @@ export function Textarea({ className, ...props }: TextareaProps) {
 
 const textAreaStyle = tv({
   base: [
-    "border-carbon-900 placeholder:text-carbon-600 min-h-28 w-full resize-none rounded-md border px-3 py-2 text-white outline-none read-only:cursor-not-allowed",
+    "min-h-28 w-full resize-none rounded-md border border-neutral-900 px-3 py-2 text-white outline-none placeholder:text-neutral-600 read-only:cursor-not-allowed",
   ],
 });

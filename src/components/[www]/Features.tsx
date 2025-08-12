@@ -5,12 +5,12 @@ export default function Features() {
   return (
     <section className="relative overflow-hidden">
       <Container>
-        <div className="border-carbon-900 border-x">
-          <div className="bg-carbon-900 grid grid-cols-1 gap-px md:grid-cols-3">
+        <div className="border-x border-neutral-900">
+          <div className="grid grid-cols-1 gap-px bg-neutral-900 md:grid-cols-3">
             {[...Array(6)].map((_, i) => (
               <div
                 key={i}
-                className="bg-carbon-950 relative flex flex-col gap-10 p-8 lg:px-9 lg:py-10"
+                className="relative flex flex-col gap-10 bg-neutral-950 p-8 lg:px-9 lg:py-10"
               >
                 <Image
                   src="https://framerusercontent.com/images/nEXywAqloedAzBmmJ81l0eWFPDE.webp"

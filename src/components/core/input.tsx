@@ -18,6 +18,6 @@ export function Input({ className, ...props }: InputProps) {
 
 const inputStyle = tv({
   base: [
-    "border-carbon-200 hover:bg-carbon-800/30 dark:border-carbon-800 dark:placeholder:text-carbon-500 h-10 w-full rounded-lg border bg-transparent px-3 py-2 text-base transition duration-200 ease-out outline-none read-only:cursor-not-allowed dark:text-white",
+    "h-10 w-full rounded-lg border border-neutral-200 bg-transparent px-3 py-2 text-base transition duration-200 ease-out outline-none read-only:cursor-not-allowed hover:bg-neutral-800/30 dark:border-neutral-800 dark:text-white dark:placeholder:text-neutral-500",
   ],
 });

@@ -4,7 +4,7 @@ import SignOut from "./SignOut";
 
 export default function Header() {
   return (
-    <header className="bg-carbon-900/90 sticky top-0 z-40 h-16 w-full backdrop-blur">
+    <header className="sticky top-0 z-40 h-16 w-full bg-neutral-950/90 backdrop-blur">
       <div className="mx-auto w-full max-w-6xl">
         <div className="flex h-full min-h-16 items-center">
           <Link href={"/"} className="flex items-center gap-1">

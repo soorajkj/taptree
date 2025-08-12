@@ -22,7 +22,7 @@ export default function SocialsList() {
       {test.map((_, i) => (
         <button
           key={i}
-          className="hover:bg-carbon-800/30 flex size-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg"
+          className="flex size-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg hover:bg-neutral-800/30"
         >
           <div className="flex size-7 items-center justify-center">
             <MediaIcon icon={_.icon} className="size-full" />

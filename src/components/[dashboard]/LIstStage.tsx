@@ -20,7 +20,7 @@ export default function ListStage({
       <Dialog.DialogHeader>
         <div className="flex items-center justify-between">
           <Dialog.DialogTitle>Social icons</Dialog.DialogTitle>
-          <Dialog.DialogClose className="hover:bg-carbon-800/30 flex items-center justify-center rounded-lg p-2">
+          <Dialog.DialogClose className="flex items-center justify-center rounded-lg p-2 hover:bg-neutral-800/30">
             <Icon icon="X" className="size-5" />
           </Dialog.DialogClose>
         </div>

@@ -12,7 +12,7 @@ export default function PermaLink({}: PermaLinkProps) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-center">
-        <div className="border-carbon-900 size-16 overflow-clip rounded-full border-4">
+        <div className="size-16 overflow-clip rounded-full border-4 border-neutral-900">
           <Image
             alt=""
             height={64}
@@ -31,7 +31,7 @@ export default function PermaLink({}: PermaLinkProps) {
             </h1>
             <Icon
               icon="BadgeCheck"
-              className="stroke-carbon-900 fill-amber-500"
+              className="fill-amber-500 stroke-neutral-900"
               width={24}
               height={24}
             />
@@ -55,11 +55,11 @@ export default function PermaLink({}: PermaLinkProps) {
       <div className="flex items-center justify-center gap-6">
         <div className="flex items-center gap-1 leading-none">
           <Icon icon="Globe" className="size-5" />
-          <p className="text-carbon-50">sarahgreen.com</p>
+          <p className="text-neutral-50">sarahgreen.com</p>
         </div>
         <div className="flex items-center gap-1 leading-none">
           <Icon icon="Phone" className="size-5" />
-          <p className="text-carbon-50">555-123-4567</p>
+          <p className="text-neutral-50">555-123-4567</p>
         </div>
       </div>
     </div>

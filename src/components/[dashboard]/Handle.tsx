@@ -23,7 +23,7 @@ export default function Handle({
       {...attributes}
       {...listeners}
       {...props}
-      className="bg-carbon-800/30 flex min-h-16 w-full shrink-0 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg border border-transparent px-4 py-2"
+      className="flex min-h-16 w-full shrink-0 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg border border-transparent bg-neutral-800/30 px-4 py-2"
     >
       <div className="flex overflow-hidden">
         <span className="flex size-6 shrink-0 items-center justify-center rounded-sm text-white"></span>

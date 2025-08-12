@@ -2,16 +2,16 @@ import { Container } from "../core/container";
 
 export default function Partners() {
   return (
-    <section className="border-carbon-900 relative overflow-hidden border-t">
+    <section className="relative overflow-hidden border-t border-neutral-900">
       <Container>
-        <div className="border-carbon-900 border-x">
-          <div className="bg-carbon-900 grid grid-cols-12 gap-px">
+        <div className="border-x border-neutral-900">
+          <div className="grid grid-cols-12 gap-px bg-neutral-900">
             <div className="col-span-7">
-              <div className="bg-carbon-950 h-full p-14">
+              <div className="h-full bg-neutral-950 p-14">
                 <h3 className="font-archivo text-2xl text-white">
                   Backed by world-class investors
                 </h3>
-                <p className="text-carbon-400 mt-4 max-w-sm font-light">
+                <p className="mt-4 max-w-sm font-light text-neutral-400">
                   We partner with leading investors in our field. Our backers
                   include top venture capital firms and innovative entrepreneurs
                   with strong product expertise.
@@ -19,9 +19,9 @@ export default function Partners() {
               </div>
             </div>
             <div className="col-span-5">
-              <div className="bg-carbon-900 grid grid-cols-2 justify-center gap-px transition duration-500 md:grid-cols-2">
+              <div className="grid grid-cols-2 justify-center gap-px bg-neutral-900 transition duration-500 md:grid-cols-2">
                 {[...Array(6)].map((_, i) => (
-                  <div key={i} className="bg-carbon-950 relative">
+                  <div key={i} className="relative bg-neutral-950">
                     <div className="relative flex h-24 min-h-16 items-center justify-center p-6">
                       <svg
                         width={140}
@@ -29,7 +29,7 @@ export default function Partners() {
                         viewBox="0 0 218 40"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="text-carbon-400"
+                        className="text-neutral-400"
                       >
                         <path
                           className="ccustom"

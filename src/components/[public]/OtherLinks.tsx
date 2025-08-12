@@ -7,7 +7,7 @@ export default function OtherLinks() {
       {[...Array(4)].map((_, i) => (
         <div
           key={i}
-          className="bg-carbon-800/30 flex min-h-16 items-center gap-4 rounded-lg px-4 py-2"
+          className="flex min-h-16 items-center gap-4 rounded-lg bg-neutral-800/30 px-4 py-2"
         >
           <div className="flex size-10 items-center justify-center">
             <Icon icon="Link2" className="size-4" />

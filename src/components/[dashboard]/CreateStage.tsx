@@ -47,12 +47,12 @@ export default function CreateStage({
         <div className="flex items-center justify-between">
           <button
             onClick={back}
-            className="hover:bg-carbon-800/30 flex items-center justify-center rounded-lg p-2"
+            className="flex items-center justify-center rounded-lg p-2 hover:bg-neutral-800/30"
           >
             <Icon icon="ArrowLeft" className="size-5" />
           </button>
           <Dialog.DialogTitle>Add {selectedPlatform.name}</Dialog.DialogTitle>
-          <Dialog.DialogClose className="hover:bg-carbon-800/30 flex items-center justify-center rounded-lg p-2">
+          <Dialog.DialogClose className="flex items-center justify-center rounded-lg p-2 hover:bg-neutral-800/30">
             <Icon icon="X" className="size-5" />
           </Dialog.DialogClose>
         </div>
@@ -61,7 +61,7 @@ export default function CreateStage({
         <h3 className="text-lg text-white">
           Add your {selectedPlatform.name} profile
         </h3>
-        <p className="text-carbon-400 text-sm">
+        <p className="text-sm text-neutral-400">
           Enter the URL to your {selectedPlatform.name} profile
         </p>
       </div>

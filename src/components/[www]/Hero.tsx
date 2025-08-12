@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <Container>
-        <div className="border-carbon-900 border-x py-48">
+        <div className="border-x border-neutral-900 py-48">
           <div className="flex flex-col items-center gap-4">
             <h1 className="font-archivo max-w-4xl text-center text-4xl font-medium text-white md:text-6xl">
               Compound Advertising and Ecommerce Outcomes with Real-Time

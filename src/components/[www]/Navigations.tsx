@@ -5,7 +5,7 @@ export default function Navigations() {
         {["Product", "Solutions", "Resources", "Customers", "Pricing"].map(
           (_, i) => (
             <li key={i} className="relative">
-              <span className="text-carbon-50 inline-flex px-4 py-1 text-sm">
+              <span className="inline-flex px-4 py-1 text-sm text-neutral-50">
                 {_}
               </span>
             </li>
