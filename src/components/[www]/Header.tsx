@@ -32,7 +32,7 @@ export default function Header() {
         onFocusCapture={() => setIsHidden(false)}
         variants={{ hidden: { y: "-100%" }, isHidden: { y: "0%" } }}
         transition={{ duration: 0.2 }}
-        className="sticky top-0 z-40 mx-auto h-auto w-full border-b border-neutral-900 bg-neutral-900/80 backdrop-blur-md"
+        className="sticky top-0 z-40 mx-auto h-auto w-full border-b border-neutral-900 bg-neutral-950/80 backdrop-blur-md"
       >
         <Container>
           <div className="border-x border-neutral-900">
@@ -48,7 +48,7 @@ export default function Header() {
               <div className="flex flex-1 justify-end">
                 <div className="flex items-center gap-2">
                   <Button>Login</Button>
-                  <Button>Get started</Button>
+                  <Button varinat="secondary">Get started</Button>
                 </div>
               </div>
             </div>
