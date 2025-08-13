@@ -44,14 +44,17 @@ export default function SortableList<T extends SortableItemBase>({
     })
   );
 
-  const handleDragEnd = useCallback((event: DragEndEvent) => {
-    const { active, over } = event;
-    if (!over || active.id === over.id) return;
-    const from = items.findIndex(({ id }) => id === active.id);
-    const to = items.findIndex(({ id }) => id === over.id);
-    const state = arrayMove(items, from, to);
-    onDragEventEnd(state);
-  }, []);
+  const handleDragEnd = useCallback(
+    (event: DragEndEvent) => {
+      const { active, over } = event;
+      if (!over || active.id === over.id) return;
+      const from = items.findIndex(({ id }) => id === active.id);
+      const to = items.findIndex(({ id }) => id === over.id);
+      const state = arrayMove(items, from, to);
+      onDragEventEnd(state);
+    },
+    [items, onDragEventEnd]
+  );
 
   return (
     <DndContext

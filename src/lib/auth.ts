@@ -12,6 +12,12 @@ export const auth = betterAuth({
   }),
   emailAndPassword: {
     enabled: true,
+    autoSignIn: false,
+  },
+  advanced: {
+    database: {
+      generateId: false,
+    },
   },
   // make sure nextCookies is the last plugin in the array
   plugins: [openAPI(), username(), admin(), nextCookies()],
