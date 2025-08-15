@@ -10,10 +10,12 @@ import { Button } from "@/components/core/button";
 import { authClient } from "@/lib/authClient";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import { useState } from "react";
 
 type SignUpSchema = z.infer<typeof signUpSchema>;
 
 export default function SignUpForm() {
+  const [isPending, setIsPending] = useState(false);
   const router = useRouter();
   const form = useForm<SignUpSchema>({
     resolver: zodResolver(signUpSchema),
@@ -22,15 +24,26 @@ export default function SignUpForm() {
   });
 
   const onSubmit = async (fields: SignUpSchema) => {
-    await authClient.signUp.email(
-      { ...fields },
-      {
+    await authClient.signUp.email({
+      ...fields,
+      fetchOptions: {
+        onRequest: () => {
+          setIsPending(true);
+        },
+        onResponse: () => {
+          setIsPending(false);
+        },
+        onError: (ctx) => {
+          const message = ctx.error.message || "Something went wrong";
+          toast.error(message);
+        },
         onSuccess: () => {
-          toast.success("User registration success");
+          form.reset();
+          toast.success("Registration successfull");
           router.push("/signin");
         },
-      }
-    );
+      },
+    });
     form.reset();
   };
 
@@ -38,11 +51,8 @@ export default function SignUpForm() {
     <Form.FormRoot {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="grid w-full max-w-sm grid-cols-1 gap-4"
+        className="grid w-full grid-cols-1 gap-4"
       >
-        <h2 className="font-archivo text-center text-2xl font-medium text-white">
-          Sign in to your account
-        </h2>
         <Form.FormField
           control={form.control}
           name="name"
@@ -100,7 +110,7 @@ export default function SignUpForm() {
             </Form.FormItem>
           )}
         />
-        <Button>Get started</Button>
+        <Button disabled={isPending}>Get started</Button>
       </form>
     </Form.FormRoot>
   );

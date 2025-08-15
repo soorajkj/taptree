@@ -1,10 +1,10 @@
-import type { PropsWithChildren } from "react";
-import type { Metadata } from "next";
-import { Toaster } from "sonner";
+import { type PropsWithChildren } from "react";
+import { type Metadata } from "next";
 import fonts from "@/lib/fonts";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeToggler from "@/components/ThemeToggler";
 import QueryClientProvider from "@/components/QueryClientProvider";
+import Toaster from "@/components/Toaster";
 import "@/app/globals.css";
 
 export const metadata: Metadata = {
@@ -21,6 +21,7 @@ export default function Layout({ children }: PropsWithChildren) {
           disableTransitionOnChange
           defaultTheme="system"
           attribute="class"
+          forcedTheme="dark"
         >
           <ThemeToggler />
           <QueryClientProvider>{children}</QueryClientProvider>

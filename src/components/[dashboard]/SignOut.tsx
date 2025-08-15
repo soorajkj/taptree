@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 export default function SignOut() {
   const router = useRouter();
-  const { data: session } = authClient.useSession();
+  const { data } = authClient.useSession();
 
   const handleClick = async () => {
     await authClient.signOut({
@@ -19,9 +19,5 @@ export default function SignOut() {
     });
   };
 
-  return (
-    <button onClick={handleClick}>
-      Signout <span className="text-xs">{JSON.stringify(session)}</span>
-    </button>
-  );
+  return <button onClick={handleClick}>Signout {data?.user.name}</button>;
 }

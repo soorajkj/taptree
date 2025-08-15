@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import {
   AnimatePresence,
   motion,
@@ -10,11 +10,14 @@ import {
 import Navigations from "./Navigations";
 import { Container } from "../core/container";
 import { Button } from "../core/button";
+import Link from "next/link";
+import { authClient } from "@/lib/authClient";
 
 export default function Header() {
   const { scrollY } = useScroll();
   const [isHidden, setIsHidden] = useState(false);
   const lastYRef = useRef(0);
+  const { data } = authClient.useSession();
 
   useMotionValueEvent(scrollY, "change", (y) => {
     const difference = y - lastYRef.current;
@@ -47,8 +50,20 @@ export default function Header() {
               </div>
               <div className="flex flex-1 justify-end">
                 <div className="flex items-center gap-2">
-                  <Button>Login</Button>
-                  <Button varinat="secondary">Get started</Button>
+                  {!data?.session ? (
+                    <Fragment>
+                      <Button asChild={true}>
+                        <Link href={"/signin"}>Login</Link>
+                      </Button>
+                      <Button varinat="secondary" asChild={true}>
+                        <Link href={"/signup"}>Get started</Link>
+                      </Button>
+                    </Fragment>
+                  ) : (
+                    <Button varinat="secondary" asChild={true}>
+                      <Link href={"/dashboard"}>Dashboard</Link>
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
